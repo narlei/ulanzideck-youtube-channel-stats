@@ -6,7 +6,7 @@ Canvas-rendered key faces with your channel avatar, compact numbers and a daily 
 
 ![YouTube Channel Stats on an Ulanzi Deck](resources/cover.png)
 
-[![Ulanzi Community Store](https://raw.githubusercontent.com/narlei/ulanzicommunitystore/main/docs/badges/ulanzi-community-store-shield.svg)](https://ulanzicommunitystore.narlei.com)
+[![Ulanzi Community Store](https://raw.githubusercontent.com/narlei/ulanzicommunitystore/main/docs/badges/ulanzi-community-store-shield.svg)](https://ulanzicommunitystore.narlei.com/plugins/?plugin=narlei/ulanzideck-youtube-channel-stats)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-macOS%20·%20Windows-lightgrey.svg)]()
 [![API](https://img.shields.io/badge/YouTube%20Data%20API-v3-FF0033.svg)]()
@@ -22,9 +22,9 @@ Canvas-rendered key faces with your channel avatar, compact numbers and a daily 
 
 ### Get it from the Ulanzi Community Store
 
-[![Download on the Ulanzi Community Store](https://raw.githubusercontent.com/narlei/ulanzicommunitystore/main/docs/badges/ulanzi-community-store-shield.svg)](https://ulanzicommunitystore.narlei.com)
+[![Download on the Ulanzi Community Store](https://raw.githubusercontent.com/narlei/ulanzicommunitystore/main/docs/badges/ulanzi-community-store-shield.svg)](https://ulanzicommunitystore.narlei.com/plugins/?plugin=narlei/ulanzideck-youtube-channel-stats)
 
-**[ulanzicommunitystore.narlei.com](https://ulanzicommunitystore.narlei.com)** → search for **YouTube Channel Stats** → install with one click.
+**[Open YouTube Channel Stats in the store](https://ulanzicommunitystore.narlei.com/plugins/?plugin=narlei/ulanzideck-youtube-channel-stats)** → install with one click.
 
 </div>
 

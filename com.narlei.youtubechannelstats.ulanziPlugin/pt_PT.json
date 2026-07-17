@@ -1,0 +1,40 @@
+{
+  "Name": "Estatísticas de Canal do YouTube",
+  "Description": "Estatísticas bonitas do seu canal do YouTube no deck: inscritos, visualizações e vídeos com avatar do canal e crescimento diário.",
+  "Actions": [
+    {
+      "Name": "Estatísticas do Canal",
+      "Tooltip": "Mostra inscritos, visualizações ou número de vídeos de um canal do YouTube com um visual bonito."
+    }
+  ],
+  "Localization": {
+    "API Key": "API Key",
+    "YouTube Data API v3 key": "Chave da YouTube Data API v3",
+    "Channel": "Canal",
+    "@handle or channel ID": "@handle ou ID do canal",
+    "Show": "Mostrar",
+    "Subscribers": "Inscritos",
+    "Views": "Visualizações",
+    "Videos": "Vídeos",
+    "Theme": "Tema",
+    "Dark": "Escuro",
+    "Red": "Vermelho",
+    "Black": "Preto",
+    "Numbers": "Números",
+    "Compact (1.2M)": "Compacto (1.2M)",
+    "Full (1,234,567)": "Completo (1.234.567)",
+    "Refresh": "Atualizar",
+    "1 minute": "1 minuto",
+    "5 minutes": "5 minutos",
+    "10 minutes": "10 minutos",
+    "30 minutes": "30 minutos",
+    "1 hour": "1 hora",
+    "Avatar": "Avatar",
+    "Show channel avatar": "Mostrar avatar do canal",
+    "Hide avatar": "Ocultar avatar",
+    "On key press": "Ao pressionar",
+    "Cycle metric": "Alternar métrica",
+    "Refresh now": "Atualizar agora",
+    "How to get an API Key": "Como obter uma API Key"
+  }
+}

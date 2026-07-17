@@ -1,0 +1,45 @@
+{
+  "Author": "Narlei Moreira",
+  "Name": "YouTube Channel Stats",
+  "Description": "Beautiful YouTube channel statistics on your deck: subscribers, views and videos with channel avatar and daily growth.",
+  "Icon": "assets/icons/icon.svg",
+  "Version": "1.0.0",
+  "Category": "YouTube Channel Stats",
+  "CategoryIcon": "assets/icons/icon.svg",
+  "CodePath": "plugin/app.html",
+  "Type": "JavaScript",
+  "PrivateAPI": true,
+  "UUID": "com.narlei.ulanzideck.youtubechannelstats",
+  "URL": "https://github.com/narlei/ulanzideck-youtube-channel-stats",
+  "Actions": [
+    {
+      "Name": "Channel Stats",
+      "Icon": "assets/actions/channel.svg",
+      "PropertyInspectorPath": "property-inspector/channel/inspector.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "channel",
+          "Image": "assets/actions/channel.svg"
+        }
+      ],
+      "Tooltip": "Shows subscribers, views or video count of a YouTube channel with a beautiful key face.",
+      "UUID": "com.narlei.ulanzideck.youtubechannelstats.channel",
+      "SupportedInMultiActions": false,
+      "Controllers": ["Keypad"]
+    }
+  ],
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.11"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software": {
+    "MinVersion": "2.1.0"
+  }
+}

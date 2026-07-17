@@ -1,0 +1,40 @@
+{
+  "Name": "YouTube Channel Stats",
+  "Description": "Beautiful YouTube channel statistics on your deck: subscribers, views and videos with channel avatar and daily growth.",
+  "Actions": [
+    {
+      "Name": "Channel Stats",
+      "Tooltip": "Shows subscribers, views or video count of a YouTube channel with a beautiful key face."
+    }
+  ],
+  "Localization": {
+    "API Key": "API Key",
+    "YouTube Data API v3 key": "YouTube Data API v3 key",
+    "Channel": "Channel",
+    "@handle or channel ID": "@handle or channel ID",
+    "Show": "Show",
+    "Subscribers": "Subscribers",
+    "Views": "Views",
+    "Videos": "Videos",
+    "Theme": "Theme",
+    "Dark": "Dark",
+    "Red": "Red",
+    "Black": "Black",
+    "Numbers": "Numbers",
+    "Compact (1.2M)": "Compact (1.2M)",
+    "Full (1,234,567)": "Full (1,234,567)",
+    "Refresh": "Refresh",
+    "1 minute": "1 minute",
+    "5 minutes": "5 minutes",
+    "10 minutes": "10 minutes",
+    "30 minutes": "30 minutes",
+    "1 hour": "1 hour",
+    "Avatar": "Avatar",
+    "Show channel avatar": "Show channel avatar",
+    "Hide avatar": "Hide avatar",
+    "On key press": "On key press",
+    "Cycle metric": "Cycle metric",
+    "Refresh now": "Refresh now",
+    "How to get an API Key": "How to get an API Key"
+  }
+}

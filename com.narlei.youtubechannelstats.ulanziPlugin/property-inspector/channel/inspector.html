@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover" />
+  <title>Channel Stats</title>
+  <link rel="stylesheet" href="../../libs/css/uspi.css">
+</head>
+<body>
+  <div class="uspi-wrapper hidden">
+
+    <form id="property-inspector">
+
+      <div class="uspi-item">
+        <div class="uspi-item-label" data-localize>API Key</div>
+        <input class="uspi-item-value" type="password" id="apiKey" name="apiKey" placeholder="YouTube Data API v3 key" data-localize>
+      </div>
+
+      <div class="uspi-item">
+        <div class="uspi-item-label" data-localize>Channel</div>
+        <input class="uspi-item-value" type="text" id="channel" name="channel" placeholder="@handle or channel ID" data-localize>
+      </div>
+
+      <div class="uspi-item">
+        <div class="uspi-item-label" data-localize>Show</div>
+        <select class="uspi-item-value select" id="metric" name="metric">
+          <option value="subscribers" selected data-localize>Subscribers</option>
+          <option value="views" data-localize>Views</option>
+          <option value="videos" data-localize>Videos</option>
+        </select>
+      </div>
+
+      <div class="uspi-item">
+        <div class="uspi-item-label" data-localize>Theme</div>
+        <select class="uspi-item-value select" id="theme" name="theme">
+          <option value="dark" selected data-localize>Dark</option>
+          <option value="red" data-localize>Red</option>
+          <option value="black" data-localize>Black</option>
+        </select>
+      </div>
+
+      <div class="uspi-item">
+        <div class="uspi-item-label" data-localize>Numbers</div>
+        <select class="uspi-item-value select" id="format" name="format">
+          <option value="compact" selected data-localize>Compact (1.2M)</option>
+          <option value="full" data-localize>Full (1,234,567)</option>
+        </select>
+      </div>
+
+      <div class="uspi-item">
+        <div class="uspi-item-label" data-localize>Refresh</div>
+        <select class="uspi-item-value select" id="refresh" name="refresh">
+          <option value="60" data-localize>1 minute</option>
+          <option value="300" selected data-localize>5 minutes</option>
+          <option value="600" data-localize>10 minutes</option>
+          <option value="1800" data-localize>30 minutes</option>
+          <option value="3600" data-localize>1 hour</option>
+        </select>
+      </div>
+
+      <div class="uspi-item">
+        <div class="uspi-item-label" data-localize>Avatar</div>
+        <select class="uspi-item-value select" id="showAvatar" name="showAvatar">
+          <option value="true" selected data-localize>Show channel avatar</option>
+          <option value="false" data-localize>Hide avatar</option>
+        </select>
+      </div>
+
+      <div class="uspi-item">
+        <div class="uspi-item-label" data-localize>On key press</div>
+        <select class="uspi-item-value select" id="cycleOnPress" name="cycleOnPress">
+          <option value="true" selected data-localize>Cycle metric</option>
+          <option value="false" data-localize>Refresh now</option>
+        </select>
+      </div>
+
+      <div class="uspi-item" id="help">
+        <div class="uspi-item-label"></div>
+        <div class="uspi-item-value">
+          <a href="javascript:void(0);" class="clickable" data-localize>How to get an API Key</a>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+
+  <script src="../../libs/js/constants.js"></script>
+  <script src="../../libs/js/eventEmitter.js"></script>
+  <script src="../../libs/js/timers.js"></script>
+  <script src="../../libs/js/utils.js"></script>
+  <script src="../../libs/js/ulanziApi.js"></script>
+
+  <script src="./inspector.js"></script>
+
+</body>
+</html>

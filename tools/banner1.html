@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 2400px; height: 1600px; overflow: hidden; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background:
+      radial-gradient(1300px 900px at 14% 10%, rgba(46,86,170,0.38), transparent 70%),
+      linear-gradient(135deg, #0a0e1a, #0d1117);
+    color: #fff;
+    position: relative;
+  }
+
+  .eyebrow {
+    position: absolute; left: 130px; top: 360px;
+    display: flex; align-items: center; gap: 20px;
+    font-size: 32px; font-weight: 700; letter-spacing: 6px; color: #9aa2b4;
+  }
+  .eyebrow .dot { width: 18px; height: 18px; border-radius: 50%; background: #ff3b4d; }
+
+  .headline { position: absolute; left: 130px; top: 430px; }
+  .headline .l1, .headline .l2 { font-size: 106px; font-weight: 800; letter-spacing: -3px; line-height: 1.12; }
+  .headline .l2 {
+    background: linear-gradient(90deg, #3ecf6b 0%, #22d3ee 55%, #4772fa 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .body { position: absolute; left: 130px; top: 760px; width: 820px; font-size: 42px; font-weight: 500; color: #aeb6c6; line-height: 1.5; }
+
+  .checks { position: absolute; left: 130px; top: 1080px; }
+  .check { display: flex; align-items: center; gap: 26px; margin-bottom: 56px; }
+  .check .box {
+    width: 46px; height: 46px; border-radius: 13px;
+    background: rgba(255,59,77,0.14); border: 2px solid #ff3b4d;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .check svg { width: 26px; height: 26px; }
+  .check .label { font-size: 40px; font-weight: 600; color: #e6e9f0; }
+
+  .grid {
+    position: absolute; left: 1150px; top: 190px;
+    display: grid; grid-template-columns: repeat(3, 360px); gap: 40px;
+  }
+  .card {
+    width: 360px; height: 500px; border-radius: 30px;
+    background: #15181f; border: 1px solid rgba(255,255,255,0.07);
+    position: relative; overflow: hidden;
+    text-align: center;
+  }
+  .card .bar { position: absolute; left: 24px; right: 24px; top: 0; height: 6px; border-radius: 0 0 6px 6px; }
+  .card img { width: 236px; height: 236px; border-radius: 40px; margin-top: 62px; }
+  .card .title { font-size: 40px; font-weight: 800; margin-top: 44px; }
+  .card .sub { font-size: 30px; font-weight: 600; color: #8b93a7; margin-top: 14px; }
+</style>
+</head>
+<body>
+
+  <div class="eyebrow"><div class="dot"></div>KEY FACES</div>
+
+  <div class="headline">
+    <div class="l1">Every metric.</div>
+    <div class="l2">Simply gorgeous.</div>
+  </div>
+
+  <div class="body">Canvas-rendered key faces with your channel avatar, compact numbers and a daily growth badge.</div>
+
+  <div class="checks">
+    <div class="check">
+      <div class="box"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12.5l5 5L20 6.5" stroke="#ff3b4d" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="label">Subscribers, views &amp; videos</div>
+    </div>
+    <div class="check">
+      <div class="box"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12.5l5 5L20 6.5" stroke="#ff3b4d" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="label">Daily growth badge</div>
+    </div>
+    <div class="check">
+      <div class="box"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12.5l5 5L20 6.5" stroke="#ff3b4d" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="label">Dark, Red &amp; Black themes</div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="bar" style="background:#ff3b4d"></div>
+      <img id="k1">
+      <div class="title">Subscribers</div>
+      <div class="sub">with channel avatar</div>
+    </div>
+    <div class="card">
+      <div class="bar" style="background:#22d3ee"></div>
+      <img id="k2">
+      <div class="title">Views</div>
+      <div class="sub">compact numbers</div>
+    </div>
+    <div class="card">
+      <div class="bar" style="background:#3ecf6b"></div>
+      <img id="k3">
+      <div class="title">Daily growth</div>
+      <div class="sub">&#9650; since midnight</div>
+    </div>
+    <div class="card">
+      <div class="bar" style="background:#e3434c"></div>
+      <img id="k4">
+      <div class="title">Red theme</div>
+      <div class="sub">bold &amp; loud</div>
+    </div>
+    <div class="card">
+      <div class="bar" style="background:#8b93a7"></div>
+      <img id="k5">
+      <div class="title">Black theme</div>
+      <div class="sub">OLED friendly</div>
+    </div>
+    <div class="card">
+      <div class="bar" style="background:#4772fa"></div>
+      <img id="k6">
+      <div class="title">Full numbers</div>
+      <div class="sub">1,284,000 style</div>
+    </div>
+  </div>
+
+  <script src="../com.narlei.youtubechannelstats.ulanziPlugin/plugin/actions/channelStats.js"></script>
+  <script src="./mock.js"></script>
+  <script>
+    renderKey('#k1', { metric: 'subscribers', theme: 'dark', channel: '@b1' });
+    renderKey('#k2', { metric: 'views', theme: 'dark', channel: '@b2' });
+    renderKey('#k3', { metric: 'subscribers', theme: 'dark', channel: '@b3' }, null, 1283600);
+    renderKey('#k4', { metric: 'subscribers', theme: 'red', channel: '@b4' });
+    renderKey('#k5', { metric: 'videos', theme: 'black', channel: '@b5' });
+    renderKey('#k6', { metric: 'subscribers', theme: 'dark', channel: '@b6', format: 'full' });
+  </script>
+</body>
+</html>

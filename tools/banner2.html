@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 2400px; height: 1600px; overflow: hidden; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background:
+      radial-gradient(1300px 900px at 14% 10%, rgba(46,86,170,0.38), transparent 70%),
+      linear-gradient(135deg, #0a0e1a, #0d1117);
+    color: #fff;
+    position: relative;
+  }
+
+  .eyebrow {
+    position: absolute; left: 130px; top: 360px;
+    display: flex; align-items: center; gap: 20px;
+    font-size: 32px; font-weight: 700; letter-spacing: 6px; color: #9aa2b4;
+  }
+  .eyebrow .dot { width: 18px; height: 18px; border-radius: 50%; background: #ff3b4d; }
+
+  .headline { position: absolute; left: 130px; top: 430px; }
+  .headline .l1, .headline .l2 { font-size: 102px; font-weight: 800; letter-spacing: -3px; line-height: 1.12; }
+  .headline .l2 {
+    background: linear-gradient(90deg, #3ecf6b 0%, #22d3ee 55%, #4772fa 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .body { position: absolute; left: 130px; top: 760px; width: 830px; font-size: 42px; font-weight: 500; color: #aeb6c6; line-height: 1.5; }
+
+  .checks { position: absolute; left: 130px; top: 1110px; }
+  .check { display: flex; align-items: center; gap: 26px; margin-bottom: 56px; }
+  .check .box {
+    width: 46px; height: 46px; border-radius: 13px;
+    background: rgba(255,59,77,0.14); border: 2px solid #ff3b4d;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .check svg { width: 26px; height: 26px; }
+  .check .label { font-size: 40px; font-weight: 600; color: #e6e9f0; }
+
+  .window {
+    position: absolute; left: 1210px; top: 220px;
+    width: 900px; height: 1130px;
+    background: #1e1f22; border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 26px;
+    box-shadow: 0 40px 90px rgba(0,0,0,0.55);
+    overflow: hidden;
+  }
+  .titlebar {
+    height: 76px; background: #26272b; position: relative;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 30px; font-weight: 600; color: #8b93a7;
+  }
+  .lights { position: absolute; left: 30px; top: 28px; display: flex; gap: 16px; }
+  .light { width: 22px; height: 22px; border-radius: 50%; }
+
+  .form { padding: 52px 56px; }
+  .field { margin-bottom: 42px; }
+  .field .lbl { font-size: 30px; font-weight: 600; color: #8b93a7; margin-bottom: 16px; }
+  .control {
+    height: 86px; background: #18191b; border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 16px; display: flex; align-items: center; padding: 0 30px;
+    font-size: 34px; color: #e6e9f0;
+    position: relative;
+  }
+  .control.focus { border: 2px solid #ff3b4d; box-shadow: 0 0 0 5px rgba(255,59,77,0.18); }
+  .control .caret {
+    position: absolute; right: 30px; width: 0; height: 0;
+    border-left: 12px solid transparent; border-right: 12px solid transparent;
+    border-top: 14px solid #8b93a7;
+  }
+  .keypreview {
+    position: absolute; right: -0px; bottom: -0px;
+  }
+
+  .preview {
+    position: absolute; left: 1980px; top: 990px;
+  }
+  .preview img {
+    width: 300px; height: 300px; border-radius: 52px;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.65);
+    border: 1px solid rgba(255,255,255,0.10);
+  }
+</style>
+</head>
+<body>
+
+  <div class="eyebrow"><div class="dot"></div>EASY SETUP</div>
+
+  <div class="headline">
+    <div class="l1">Paste a key.</div>
+    <div class="l2">Type your @handle.</div>
+  </div>
+
+  <div class="body">Works with a free YouTube Data API key. Pick metric, theme and refresh — from 1 minute to 1 hour.</div>
+
+  <div class="checks">
+    <div class="check">
+      <div class="box"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12.5l5 5L20 6.5" stroke="#ff3b4d" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="label">@handle, channel ID or URL</div>
+    </div>
+    <div class="check">
+      <div class="box"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12.5l5 5L20 6.5" stroke="#ff3b4d" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="label">Press the key to cycle metrics</div>
+    </div>
+    <div class="check">
+      <div class="box"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12.5l5 5L20 6.5" stroke="#ff3b4d" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="label">English &amp; Portugu&ecirc;s</div>
+    </div>
+  </div>
+
+  <div class="window">
+    <div class="titlebar">
+      <div class="lights">
+        <div class="light" style="background:#ff5f57"></div>
+        <div class="light" style="background:#febc2e"></div>
+        <div class="light" style="background:#28c840"></div>
+      </div>
+      Channel Stats
+    </div>
+    <div class="form">
+      <div class="field">
+        <div class="lbl">API Key</div>
+        <div class="control">••••••••••••••••••••••••</div>
+      </div>
+      <div class="field">
+        <div class="lbl">Channel</div>
+        <div class="control focus">@mychannel</div>
+      </div>
+      <div class="field">
+        <div class="lbl">Show</div>
+        <div class="control">Subscribers<div class="caret"></div></div>
+      </div>
+      <div class="field">
+        <div class="lbl">Theme</div>
+        <div class="control">Dark<div class="caret"></div></div>
+      </div>
+      <div class="field">
+        <div class="lbl">Refresh</div>
+        <div class="control">5 minutes<div class="caret"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="preview"><img id="k1"></div>
+
+  <script src="../com.narlei.youtubechannelstats.ulanziPlugin/plugin/actions/channelStats.js"></script>
+  <script src="./mock.js"></script>
+  <script>
+    renderKey('#k1', { metric: 'subscribers', theme: 'dark', channel: '@p1' }, null, 1283600);
+  </script>
+</body>
+</html>

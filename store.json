@@ -1,0 +1,17 @@
+{
+  "cover": "resources/cover.png",
+  "screenshots": [
+    "resources/banner1.png",
+    "resources/banner2.png"
+  ],
+  "longDescription": "Beautiful YouTube channel statistics on your Ulanzi Deck. Canvas-rendered key faces show subscribers, views or video count with the channel avatar, compact numbers (1.2M) and a daily growth badge. Three themes (Dark, Red, Black), @handle or channel ID support, press-to-cycle metrics and configurable refresh. Works with a free YouTube Data API v3 key.",
+  "deviceTypes": [
+    "deck"
+  ],
+  "tags": [
+    "youtube",
+    "statistics",
+    "subscribers",
+    "creator"
+  ]
+}

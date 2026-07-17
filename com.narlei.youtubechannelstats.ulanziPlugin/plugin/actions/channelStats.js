@@ -6,11 +6,73 @@
 
 const YT_METRICS = ['subscribers', 'views', 'videos'];
 
-const YT_LABELS = {
-  en: { subscribers: 'SUBSCRIBERS', views: 'VIEWS', videos: 'VIDEOS' },
-  pt: { subscribers: 'INSCRITOS', views: 'VIEWS', videos: 'VÍDEOS' },
-  es: { subscribers: 'SUSCRIPTORES', views: 'VISTAS', videos: 'VÍDEOS' },
-  de: { subscribers: 'ABONNENTEN', views: 'AUFRUFE', videos: 'VIDEOS' }
+// Matches the locale codes produced by libs/js/utils.js#adaptLanguage (en, de,
+// es, fr, ja, ko, pt_BR, zh_CN, zh_HK) — same set as the en.json/*.json
+// Property Inspector translations, so canvas text and PI text stay in sync.
+const YT_STRINGS = {
+  en: {
+    SUBSCRIBERS: 'SUBSCRIBERS', VIEWS: 'VIEWS', VIDEOS: 'VIDEOS',
+    'Set API Key': 'Set API Key', 'in key settings': 'in key settings',
+    'Set channel': 'Set channel', '@handle or ID': '@handle or ID',
+    'API error': 'API error', 'Not found': 'Not found',
+    'No connection': 'No connection', 'Loading': 'Loading'
+  },
+  pt_BR: {
+    SUBSCRIBERS: 'INSCRITOS', VIEWS: 'VISUALIZAÇÕES', VIDEOS: 'VÍDEOS',
+    'Set API Key': 'Configure a API Key', 'in key settings': 'nas configurações',
+    'Set channel': 'Configure o canal', '@handle or ID': '@handle ou ID',
+    'API error': 'Erro na API', 'Not found': 'Não encontrado',
+    'No connection': 'Sem conexão', 'Loading': 'Carregando'
+  },
+  es: {
+    SUBSCRIBERS: 'SUSCRIPTORES', VIEWS: 'VISTAS', VIDEOS: 'VÍDEOS',
+    'Set API Key': 'Configura la API Key', 'in key settings': 'en los ajustes',
+    'Set channel': 'Configura el canal', '@handle or ID': '@handle o ID',
+    'API error': 'Error de API', 'Not found': 'No encontrado',
+    'No connection': 'Sin conexión', 'Loading': 'Cargando'
+  },
+  de: {
+    SUBSCRIBERS: 'ABONNENTEN', VIEWS: 'AUFRUFE', VIDEOS: 'VIDEOS',
+    'Set API Key': 'API-Key festlegen', 'in key settings': 'in den Einstellungen',
+    'Set channel': 'Kanal festlegen', '@handle or ID': '@handle oder ID',
+    'API error': 'API-Fehler', 'Not found': 'Nicht gefunden',
+    'No connection': 'Keine Verbindung', 'Loading': 'Wird geladen'
+  },
+  fr: {
+    SUBSCRIBERS: 'ABONNÉS', VIEWS: 'VUES', VIDEOS: 'VIDÉOS',
+    'Set API Key': 'Définir la clé API', 'in key settings': 'dans les paramètres',
+    'Set channel': 'Définir la chaîne', '@handle or ID': '@handle ou ID',
+    'API error': 'Erreur API', 'Not found': 'Introuvable',
+    'No connection': 'Pas de connexion', 'Loading': 'Chargement'
+  },
+  ja: {
+    SUBSCRIBERS: '登録者数', VIEWS: '再生回数', VIDEOS: '動画数',
+    'Set API Key': 'APIキーを設定', 'in key settings': '設定で',
+    'Set channel': 'チャンネルを設定', '@handle or ID': '@handle またはID',
+    'API error': 'APIエラー', 'Not found': '見つかりません',
+    'No connection': '接続なし', 'Loading': '読み込み中'
+  },
+  ko: {
+    SUBSCRIBERS: '구독자', VIEWS: '조회수', VIDEOS: '동영상',
+    'Set API Key': 'API 키 설정', 'in key settings': '설정에서',
+    'Set channel': '채널 설정', '@handle or ID': '@handle 또는 ID',
+    'API error': 'API 오류', 'Not found': '찾을 수 없음',
+    'No connection': '연결 없음', 'Loading': '로딩 중'
+  },
+  zh_CN: {
+    SUBSCRIBERS: '订阅者', VIEWS: '观看次数', VIDEOS: '视频数',
+    'Set API Key': '设置 API Key', 'in key settings': '在设置中',
+    'Set channel': '设置频道', '@handle or ID': '@handle 或 ID',
+    'API error': 'API 错误', 'Not found': '未找到',
+    'No connection': '无连接', 'Loading': '加载中'
+  },
+  zh_HK: {
+    SUBSCRIBERS: '訂閱者', VIEWS: '觀看次數', VIDEOS: '影片數',
+    'Set API Key': '設定 API Key', 'in key settings': '在設定中',
+    'Set channel': '設定頻道', '@handle or ID': '@handle 或 ID',
+    'API error': 'API 錯誤', 'Not found': '找不到',
+    'No connection': '無連線', 'Loading': '載入中'
+  }
 };
 
 const YT_THEMES = {
@@ -226,29 +288,23 @@ function ChannelStats(context, $UD) {
     return String(n);
   }
 
+  // $UD.language is already normalized by libs/js/utils.js#adaptLanguage
+  // (e.g. 'pt-BR' -> 'pt_BR', 'zh-Hans-CN' -> 'zh_CN'); fall back to the
+  // 2-letter prefix for any locale we don't have an exact entry for.
+  function strings() {
+    const lang = $UD.language || 'en';
+    if (YT_STRINGS[lang]) return YT_STRINGS[lang];
+    const prefix = lang.slice(0, 2);
+    const match = Object.keys(YT_STRINGS).find(k => k.slice(0, 2) === prefix);
+    return YT_STRINGS[match] || YT_STRINGS.en;
+  }
+
   function t(text) {
-    const lang = ($UD.language || 'en').slice(0, 2);
-    const dict = {
-      pt: {
-        'Set API Key': 'Configure a API Key', 'in key settings': 'nas configurações',
-        'Set channel': 'Configure o canal', '@handle or ID': '@handle ou ID',
-        'API error': 'Erro na API', 'Not found': 'Não encontrado',
-        'No connection': 'Sem conexão', 'Loading': 'Carregando'
-      },
-      es: {
-        'Set API Key': 'Configura la API Key', 'in key settings': 'en los ajustes',
-        'Set channel': 'Configura el canal', '@handle or ID': '@handle o ID',
-        'API error': 'Error de API', 'Not found': 'No encontrado',
-        'No connection': 'Sin conexión', 'Loading': 'Cargando'
-      }
-    };
-    return (dict[lang] && dict[lang][text]) || text;
+    return strings()[text] || text;
   }
 
   function metricLabel(metric) {
-    const lang = ($UD.language || 'en').slice(0, 2);
-    const labels = YT_LABELS[lang] || YT_LABELS.en;
-    return labels[metric] || labels.subscribers;
+    return strings()[metric.toUpperCase()] || strings().SUBSCRIBERS;
   }
 
   // ---------- drawing ----------

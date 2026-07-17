@@ -1,0 +1,40 @@
+{
+  "Name": "YouTube 频道统计",
+  "Description": "在你的 Deck 上显示精美的 YouTube 频道统计:订阅者、观看次数和视频数,附带频道头像和每日增长。",
+  "Actions": [
+    {
+      "Name": "频道统计",
+      "Tooltip": "以精美的按键画面显示 YouTube 频道的订阅者、观看次数或视频数。"
+    }
+  ],
+  "Localization": {
+    "API Key": "API Key",
+    "YouTube Data API v3 key": "YouTube Data API v3 密钥",
+    "Channel": "频道",
+    "@handle or channel ID": "@handle 或频道 ID",
+    "Show": "显示",
+    "Subscribers": "订阅者",
+    "Views": "观看次数",
+    "Videos": "视频数",
+    "Theme": "主题",
+    "Dark": "深色",
+    "Red": "红色",
+    "Black": "黑色",
+    "Numbers": "数字格式",
+    "Compact (1.2M)": "精简 (1.2M)",
+    "Full (1,234,567)": "完整 (1,234,567)",
+    "Refresh": "刷新间隔",
+    "1 minute": "1 分钟",
+    "5 minutes": "5 分钟",
+    "10 minutes": "10 分钟",
+    "30 minutes": "30 分钟",
+    "1 hour": "1 小时",
+    "Avatar": "头像",
+    "Show channel avatar": "显示频道头像",
+    "Hide avatar": "隐藏头像",
+    "On key press": "按键时",
+    "Cycle metric": "切换指标",
+    "Refresh now": "立即刷新",
+    "How to get an API Key": "如何获取 API Key"
+  }
+}

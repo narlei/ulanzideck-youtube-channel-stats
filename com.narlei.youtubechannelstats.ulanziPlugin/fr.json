@@ -1,0 +1,40 @@
+{
+  "Name": "Statistiques de chaîne YouTube",
+  "Description": "De belles statistiques de votre chaîne YouTube sur votre deck : abonnés, vues et vidéos avec l'avatar de la chaîne et la croissance quotidienne.",
+  "Actions": [
+    {
+      "Name": "Statistiques de la chaîne",
+      "Tooltip": "Affiche les abonnés, les vues ou le nombre de vidéos d'une chaîne YouTube avec un visuel soigné."
+    }
+  ],
+  "Localization": {
+    "API Key": "Clé API",
+    "YouTube Data API v3 key": "Clé YouTube Data API v3",
+    "Channel": "Chaîne",
+    "@handle or channel ID": "@handle ou ID de la chaîne",
+    "Show": "Afficher",
+    "Subscribers": "Abonnés",
+    "Views": "Vues",
+    "Videos": "Vidéos",
+    "Theme": "Thème",
+    "Dark": "Sombre",
+    "Red": "Rouge",
+    "Black": "Noir",
+    "Numbers": "Format des nombres",
+    "Compact (1.2M)": "Compact (1,2 M)",
+    "Full (1,234,567)": "Complet (1 234 567)",
+    "Refresh": "Actualisation",
+    "1 minute": "1 minute",
+    "5 minutes": "5 minutes",
+    "10 minutes": "10 minutes",
+    "30 minutes": "30 minutes",
+    "1 hour": "1 heure",
+    "Avatar": "Avatar",
+    "Show channel avatar": "Afficher l'avatar de la chaîne",
+    "Hide avatar": "Masquer l'avatar",
+    "On key press": "À la pression de la touche",
+    "Cycle metric": "Changer de métrique",
+    "Refresh now": "Actualiser maintenant",
+    "How to get an API Key": "Comment obtenir une clé API"
+  }
+}

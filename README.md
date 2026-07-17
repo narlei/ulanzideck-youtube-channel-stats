@@ -76,7 +76,9 @@ Drag **Channel Stats** onto a key, and press it to cycle subscribers → views �
 3. Type your channel — `@handle`, channel ID (`UC…`) or a full channel URL all work.
 4. Pick metric, theme, number format and refresh interval (1 min – 1 h).
 
-The default 5-minute refresh uses ~288 quota units/day — about 3% of the free 10,000/day quota. Localized in **English** and **Português**.
+The default 5-minute refresh uses ~288 quota units/day — about 3% of the free 10,000/day quota.
+
+Localized in **English, Português (BR), Español, Deutsch, Français, 日本語, 한국어, 简体中文 and 繁體中文** — settings UI and the key face text (metric labels, error states) both follow your Ulanzi Studio language.
 
 ---
 
@@ -113,7 +115,7 @@ com.narlei.youtubechannelstats.ulanziPlugin/   # the plugin bundle
 ├── property-inspector/   # settings UI
 ├── libs/                 # Ulanzi SDK (ulanziApi.js, utils, css)
 ├── assets/               # icons
-└── en.json / pt_PT.json
+└── en.json / de.json / es.json / fr.json / ja.json / ko.json / pt_BR.json / zh_CN.json / zh_HK.json
 tools/                    # store-art generators (cover, banner1, banner2 + mock.js)
 resources/                # cover.png, banner1.png, banner2.png
 ```

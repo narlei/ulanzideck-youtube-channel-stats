@@ -1,0 +1,40 @@
+{
+  "Name": "YouTube-Kanalstatistik",
+  "Description": "Schöne YouTube-Kanalstatistiken auf deinem Deck: Abonnenten, Aufrufe und Videos mit Kanal-Avatar und täglichem Wachstum.",
+  "Actions": [
+    {
+      "Name": "Kanalstatistik",
+      "Tooltip": "Zeigt Abonnenten, Aufrufe oder die Videoanzahl eines YouTube-Kanals mit einer schönen Tastenansicht."
+    }
+  ],
+  "Localization": {
+    "API Key": "API-Key",
+    "YouTube Data API v3 key": "YouTube Data API v3-Schlüssel",
+    "Channel": "Kanal",
+    "@handle or channel ID": "@handle oder Kanal-ID",
+    "Show": "Anzeigen",
+    "Subscribers": "Abonnenten",
+    "Views": "Aufrufe",
+    "Videos": "Videos",
+    "Theme": "Design",
+    "Dark": "Dunkel",
+    "Red": "Rot",
+    "Black": "Schwarz",
+    "Numbers": "Zahlenformat",
+    "Compact (1.2M)": "Kompakt (1,2 Mio.)",
+    "Full (1,234,567)": "Vollständig (1.234.567)",
+    "Refresh": "Aktualisierung",
+    "1 minute": "1 Minute",
+    "5 minutes": "5 Minuten",
+    "10 minutes": "10 Minuten",
+    "30 minutes": "30 Minuten",
+    "1 hour": "1 Stunde",
+    "Avatar": "Avatar",
+    "Show channel avatar": "Kanal-Avatar anzeigen",
+    "Hide avatar": "Avatar ausblenden",
+    "On key press": "Beim Tastendruck",
+    "Cycle metric": "Metrik wechseln",
+    "Refresh now": "Jetzt aktualisieren",
+    "How to get an API Key": "So erhältst du einen API-Key"
+  }
+}

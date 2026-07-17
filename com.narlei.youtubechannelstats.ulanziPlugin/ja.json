@@ -1,0 +1,40 @@
+{
+  "Name": "YouTube チャンネル統計",
+  "Description": "デッキに表示する美しい YouTube チャンネル統計。チャンネルアバターと日次成長を含む登録者数、再生回数、動画数を表示します。",
+  "Actions": [
+    {
+      "Name": "チャンネル統計",
+      "Tooltip": "美しいキー表示で YouTube チャンネルの登録者数、再生回数、動画数を表示します。"
+    }
+  ],
+  "Localization": {
+    "API Key": "APIキー",
+    "YouTube Data API v3 key": "YouTube Data API v3 キー",
+    "Channel": "チャンネル",
+    "@handle or channel ID": "@handle またはチャンネルID",
+    "Show": "表示",
+    "Subscribers": "登録者数",
+    "Views": "再生回数",
+    "Videos": "動画数",
+    "Theme": "テーマ",
+    "Dark": "ダーク",
+    "Red": "レッド",
+    "Black": "ブラック",
+    "Numbers": "数値形式",
+    "Compact (1.2M)": "簡略表示 (1.2M)",
+    "Full (1,234,567)": "完全表示 (1,234,567)",
+    "Refresh": "更新間隔",
+    "1 minute": "1分",
+    "5 minutes": "5分",
+    "10 minutes": "10分",
+    "30 minutes": "30分",
+    "1 hour": "1時間",
+    "Avatar": "アバター",
+    "Show channel avatar": "チャンネルアバターを表示",
+    "Hide avatar": "アバターを非表示",
+    "On key press": "キー押下時の動作",
+    "Cycle metric": "指標を切り替え",
+    "Refresh now": "今すぐ更新",
+    "How to get an API Key": "APIキーの取得方法"
+  }
+}

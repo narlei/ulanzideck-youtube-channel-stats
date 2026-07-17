@@ -1,0 +1,40 @@
+{
+  "Name": "유튜브 채널 통계",
+  "Description": "덱에서 보는 아름다운 유튜브 채널 통계. 채널 아바타와 일일 성장률을 포함한 구독자, 조회수, 동영상 수를 보여줍니다.",
+  "Actions": [
+    {
+      "Name": "채널 통계",
+      "Tooltip": "아름다운 키 화면으로 유튜브 채널의 구독자, 조회수 또는 동영상 수를 표시합니다."
+    }
+  ],
+  "Localization": {
+    "API Key": "API 키",
+    "YouTube Data API v3 key": "YouTube Data API v3 키",
+    "Channel": "채널",
+    "@handle or channel ID": "@handle 또는 채널 ID",
+    "Show": "표시",
+    "Subscribers": "구독자",
+    "Views": "조회수",
+    "Videos": "동영상",
+    "Theme": "테마",
+    "Dark": "다크",
+    "Red": "레드",
+    "Black": "블랙",
+    "Numbers": "숫자 형식",
+    "Compact (1.2M)": "축약 (1.2M)",
+    "Full (1,234,567)": "전체 (1,234,567)",
+    "Refresh": "새로고침 주기",
+    "1 minute": "1분",
+    "5 minutes": "5분",
+    "10 minutes": "10분",
+    "30 minutes": "30분",
+    "1 hour": "1시간",
+    "Avatar": "아바타",
+    "Show channel avatar": "채널 아바타 표시",
+    "Hide avatar": "아바타 숨기기",
+    "On key press": "키를 누르면",
+    "Cycle metric": "지표 전환",
+    "Refresh now": "지금 새로고침",
+    "How to get an API Key": "API 키 발급 방법"
+  }
+}

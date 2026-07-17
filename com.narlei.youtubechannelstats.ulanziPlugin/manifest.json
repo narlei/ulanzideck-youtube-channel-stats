@@ -3,7 +3,7 @@
   "Name": "YouTube Channel Stats",
   "Description": "Beautiful YouTube channel statistics on your deck: subscribers, views and videos with channel avatar and daily growth.",
   "Icon": "assets/icons/icon.svg",
-  "Version": "1.0.0",
+  "Version": "1.1.0",
   "Category": "YouTube Channel Stats",
   "CategoryIcon": "assets/icons/icon.svg",
   "CodePath": "plugin/app.html",
@@ -26,7 +26,9 @@
       "Tooltip": "Shows subscribers, views or video count of a YouTube channel with a beautiful key face.",
       "UUID": "com.narlei.ulanzideck.youtubechannelstats.channel",
       "SupportedInMultiActions": false,
-      "Controllers": ["Keypad"]
+      "Controllers": [
+        "Keypad"
+      ]
     }
   ],
   "OS": [
